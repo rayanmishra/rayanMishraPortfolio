@@ -1,0 +1,14 @@
+/***********************/
+/* grid */
+/***********************/
+
+.grid {
+  display: grid;
+}
+
+.header__grid {
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  align-items: center;
+}

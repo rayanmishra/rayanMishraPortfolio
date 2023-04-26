@@ -1,0 +1,29 @@
+@use './variables' as *;
+
+/***********************/
+/* Header Section */
+/***********************/
+
+.header__logo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.navbar {
+  grid-column: -1;
+}
+
+.navbar__list {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+  font-family: $main-font;
+
+  text-transform: uppercase;
+  list-style: none;
+
+  a {
+    font-weight: $bold;
+    color: $black;
+  }
+}
