@@ -9,3 +9,71 @@ body {
   max-width: 1200px;
   width: 70%;
 }
+
+.title {
+  display: flex;
+}
+
+.title--style {
+  width: 11rem;
+  height: 1.4rem;
+  border-bottom: 3.5px solid $yellow;
+}
+
+/***********************/
+/* Hero Section */
+/***********************/
+
+.hero__textContainer {
+  h1 {
+    font-family: $body-font;
+    font-weight: $semiBold;
+    font-size: 3.5rem;
+
+    background-image: linear-gradient(
+      90deg,
+      rgba(94, 114, 235, 1) 0%,
+      rgba(255, 145, 144, 1) 56%,
+      rgba(254, 193, 149, 1) 100%
+    );
+    color: transparent;
+    -webkit-background-clip: text;
+
+    animation: move 4s infinite;
+
+    @keyframes move {
+      50% {
+        background-image: linear-gradient(
+          262deg,
+          rgba(94, 114, 235, 1) 0%,
+          rgba(255, 145, 144, 1) 56%,
+          rgba(254, 193, 149, 1) 100%
+        );
+      }
+    }
+  }
+
+  p {
+    font-family: $main-font;
+    font-size: 4rem;
+    font-weight: $regular;
+    text-transform: uppercase;
+  }
+}
+
+.hero__imgContainer {
+  width: 70%;
+  justify-self: end;
+  padding-top: 5rem;
+}
+
+/***********************/
+/* About Section */
+/***********************/
+
+h3 {
+  font-family: $main-font;
+  font-size: 2.5rem;
+  font-weight: $regular;
+  text-transform: uppercase;
+}

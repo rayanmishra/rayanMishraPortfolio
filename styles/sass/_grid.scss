@@ -12,3 +12,17 @@
   padding-bottom: 0.8rem;
   align-items: center;
 }
+
+.hero__grid {
+  grid-template-columns: repeat(2, 1fr);
+
+  padding: 4rem 0;
+  gap: 2rem;
+}
+
+.about__grid {
+  grid-template-columns: repeat(2, 1fr);
+
+  padding: 4rem 0;
+  gap: 2rem;
+}
