@@ -7,7 +7,7 @@ body {
 .wrapper {
   margin-inline: auto;
   max-width: 1200px;
-  width: 70%;
+  width: 80%;
 }
 
 .title {
@@ -37,7 +37,7 @@ body {
       rgba(254, 193, 149, 1) 100%
     );
     color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
 
     animation: move 4s infinite;
 
@@ -76,4 +76,26 @@ h3 {
   font-size: 2.5rem;
   font-weight: $regular;
   text-transform: uppercase;
+  padding-bottom: 4rem;
+}
+
+.about__skill {
+  // grid-row: 2;
+
+  .skill__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+
+    i {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.about__des {
+  font-size: 1.2rem;
+  font-family: $body-font;
+  font-weight: $regular;
+  line-height: 1.5rem;
 }
