@@ -301,6 +301,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 1rem;
 }
 
 img {
@@ -310,7 +311,12 @@ img {
 .title--style {
   width: 11rem;
   height: 1.4rem;
-  border-bottom: 3.5px solid #ffdc8a;
+  border-bottom: 3.5px solid #eebf99;
+}
+
+i {
+  font-size: 3.5rem;
+  color: rgba(51, 51, 51, 0.9);
 }
 
 /***********************/
@@ -345,8 +351,8 @@ img {
   text-transform: uppercase;
 }
 .hero__textContainer .hero__tag {
-  font-family: "Crimson Text", serif;
-  font-size: 1.4rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
   font-weight: 400;
   text-transform: none;
   margin-top: 3.5rem;
@@ -385,9 +391,6 @@ h4 {
       flex-wrap: wrap;
   gap: 2.5rem;
 }
-.skill__list i {
-  font-size: 3.5rem;
-}
 
 .about__des {
   font-size: 1.2rem;
@@ -412,9 +415,9 @@ h4 {
 h5 {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
+  text-transform: uppercase;
   font-size: 2rem;
   padding-bottom: 1rem;
-  text-transform: uppercase;
 }
 
 .tool--list {
@@ -436,10 +439,77 @@ h5 {
 .project__text p {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5rem;
   padding-top: 1rem;
   line-height: 2rem;
+}
+.project__text a {
+  display: inline-block;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 1.3rem;
+  text-decoration: underline;
+}
+
+/***********************/
+/* Contact Section */
+/***********************/
+.contact--info {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  text-transform: lowercase;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.contact--header {
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.contact__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+form input,
+form textarea {
+  background: transparent;
+  outline: none;
+  border: 0;
+  padding: 1rem 1.25rem;
+  color: #333333;
+  width: 100%;
+  font-family: "Work Sans", sans-serif;
+  border-bottom: 2px solid #333333;
+  margin-bottom: 2rem;
+}
+form label {
+  font-family: "Work Sans", sans-serif;
+}
+form .btn {
+  display: inline-block;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  padding: 1rem 1.3rem;
+  background-color: #333333;
+  color: #f7f6f3;
+  border-radius: 15px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+form .btn:hover {
+  background-color: #000000;
 }
 
 /***********************/
@@ -474,6 +544,12 @@ h5 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 3rem;
+  padding: 3rem 0 8rem 0;
+}
+
+.contact__grid {
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem 0 12rem 0;
 }
 
 /***********************/
