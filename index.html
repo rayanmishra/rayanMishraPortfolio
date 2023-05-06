@@ -57,7 +57,7 @@
           <ul class="navbar__list">
             <li><a href="#">About</a></li>
             <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -306,7 +306,7 @@
       </section>
 
       <!-- Contact me -->
-      <section class="wrapper">
+      <section class="wrapper" id="contact">
         <div class="title">
           <div class="title--style"></div>
           <h3>Get in touch</h3>
@@ -358,7 +358,12 @@
 
               <button type="submit" class="btn">Send Message</button>
             </form> -->
-            <form name="contact" method="POST" data-netlify="true">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              action="./index.html#contact"
+            >
               <p>
                 <label>Your Name: <input type="text" name="name" /></label>
               </p>
