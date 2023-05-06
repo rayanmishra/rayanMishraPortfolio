@@ -111,6 +111,17 @@ h4 {
   gap: 2.5rem;
 }
 
+.list--box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    font-family: $main-font;
+    margin-top: 1rem;
+  }
+}
+
 .about__des {
   font-size: 1.2rem;
   font-family: $body-font;

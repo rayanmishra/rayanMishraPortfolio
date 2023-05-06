@@ -91,20 +91,78 @@
           <div class="about__skill">
             <h4>Toolkit</h4>
             <ul class="skill__list">
-              <li><i class="devicon-html5-plain"></i></li>
-              <li><i class="devicon-css3-plain"></i></li>
-              <li><i class="devicon-sass-original"></i></li>
-              <li><i class="devicon-javascript-plain"></i></li>
-              <li><i class="devicon-jquery-plain"></i></li>
-              <li><i class="devicon-react-original"></i></li>
-              <li><i class="devicon-git-plain"></i></li>
-              <li><i class="devicon-github-original"></i></li>
-              <li><i class="devicon-firebase-plain"></i></li>
               <li>
-                <i class="fa-solid fa-universal-access"></i>
+                <div class="list--box">
+                  <i class="devicon-html5-plain"></i>
+                  <p>HTML5</p>
+                </div>
               </li>
-              <li><i class="devicon-figma-plain"></i></li>
-              <li><i class="devicon-maya-plain"></i></li>
+              <li>
+                <div class="list--box">
+                  <i class="devicon-css3-plain"></i>
+                  <p>CSS3</p>
+                </div>
+              </li>
+              <li>
+                <div class="list--box">
+                  <i class="devicon-sass-original"></i>
+                  <p>SASS</p>
+                </div>
+              </li>
+              <li>
+                <div class="list--box">
+                  <i class="devicon-javascript-plain"></i>
+                  <p>JavaScript</p>
+                </div>
+              </li>
+              <li>
+                <div class="list--box">
+                  <i class="devicon-react-original"></i>
+                  <p>React</p>
+                </div>
+              </li>
+              <li>
+                <div class="list--box">
+                  <i class="devicon-redux-original"></i>
+                  <p>Redux</p>
+                </div>
+              </li>
+              <li>
+                <div class="list--box">
+                  <i class="devicon-jquery-plain"></i>
+                  <p>JQuery</p>
+                </div>
+              </li>
+              <li>
+                <div class="list--box">
+                  <i class="devicon-git-plain"></i>
+                  <p>Git</p>
+                </div>
+              </li>
+              <li>
+                <div class="list--box">
+                  <i class="devicon-github-original"></i>
+                  <p>Github</p>
+                </div>
+              </li>
+              <li>
+                <div class="list--box">
+                  <i class="devicon-firebase-plain"></i>
+                  <p>Firebase</p>
+                </div>
+              </li>
+              <li>
+                <div class="list--box">
+                  <i class="devicon-figma-plain"></i>
+                  <p>Figma</p>
+                </div>
+              </li>
+              <li>
+                <div class="list--box">
+                  <i class="devicon-maya-plain"></i>
+                  <p>Maya</p>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="about__des">
@@ -260,50 +318,60 @@
             <p class="contact--header">Find me on</p>
             <ul class="contact__socials">
               <li>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="devicon-github-original"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="devicon-linkedin-plain"></i></a>
               </li>
             </ul>
           </div>
           <div class="contact_form">
-            <form>
-              <div class="formRow">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  class="formInput"
-                  required
-                />
-              </div>
+            <!-- <form>
 
-              <div class="formRow">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  class="formInput"
-                  required
-                />
-              </div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="formInput"
+                required
+              />
 
-              <div class="formRow">
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  class="formInput"
-                  cols="20"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="formInput"
+                required
+              />
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="formInput"
+                cols="20"
+                rows="5"
+                required
+              ></textarea>
 
               <button type="submit" class="btn">Send Message</button>
+            </form> -->
+            <form name="contact" method="POST" data-netlify="true">
+              <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+              </p>
+
+              <p>
+                <label>Message: <textarea name="message"></textarea></label>
+              </p>
+              <p>
+                <button class="btn" type="submit">Send</button>
+              </p>
             </form>
           </div>
         </div>
