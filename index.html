@@ -38,6 +38,8 @@
       src="https://kit.fontawesome.com/d86d91a25d.js"
       crossorigin="anonymous"
     ></script>
+    <!-- load after Html -->
+    <script defer src="./script/script.js"></script>
 
     <title>Rayan Mishra</title>
   </head>
@@ -60,11 +62,23 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <div class="nav--burger"><ion-icon name="menu-outline"></ion-icon></div>
+        <!-- <div class="nav--burger"><ion-icon name="menu-outline"></ion-icon></div> -->
+        <div class="nav--burger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <nav>
+          <ul class="navbar__hamburger">
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-    <main>
+    <main id="main--section">
       <!-- hero section -->
       <section class="wrapper grid hero__grid">
         <div class="hero__textContainer">
@@ -174,8 +188,8 @@
               translates complex business concepts into feasible and measurable
               objectives.I have worked across cultures and time zones managing
               teams that are diverse and innovative. My work ethic is
-              characterized by hard work, reliability, creativity, and a love
-              for problem-solving.
+              characterized by hard work, reliability, creativity and a love for
+              problem-solving.
             </p>
             <br />
 
