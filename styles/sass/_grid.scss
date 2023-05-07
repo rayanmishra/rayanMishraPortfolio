@@ -25,6 +25,10 @@
     padding: 2rem 0 8rem 0;
     gap: 1.5rem;
   }
+
+  @media (max-width: 378px) {
+    padding: 0rem 0 8rem 0;
+  }
 }
 
 .about__grid {
@@ -38,6 +42,10 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 4rem;
   }
+
+  @media (max-width: 340px) {
+    gap: 0rem;
+  }
 }
 
 .project__grid {
@@ -49,6 +57,10 @@
   @media (max-width: 1200px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
+  }
+
+  @media (max-width: 550px) {
+    gap: 0;
   }
 }
 

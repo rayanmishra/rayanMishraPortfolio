@@ -11,6 +11,9 @@
 
 .navbar {
   grid-column: -1;
+  @media (max-width: 700px) {
+    display: none;
+  }
 }
 
 .navbar__list {
@@ -25,5 +28,17 @@
   a {
     font-weight: $bold;
     color: $black;
+  }
+}
+
+.nav--burger {
+  display: none;
+  font-size: 3rem;
+  padding-top: 10px;
+  cursor: pointer;
+  justify-self: end;
+  // align-self: end;
+  @media (max-width: 700px) {
+    display: block;
   }
 }

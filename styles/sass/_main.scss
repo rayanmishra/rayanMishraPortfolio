@@ -4,6 +4,26 @@ body {
   background-color: $beige;
 }
 
+html {
+  font: 62.5%;
+
+  @media (max-width: 1200px) {
+    font: 55%;
+  }
+
+  @media (max-width: 1100px) {
+    font: 50%;
+  }
+
+  @media (max-width: 750px) {
+    font: 45%;
+  }
+
+  @media (max-width: 450px) {
+    font: 35%;
+  }
+}
+
 .wrapper {
   margin-inline: auto;
   max-width: 1200px;
@@ -13,6 +33,10 @@ body {
 .title {
   display: flex;
   gap: 1rem;
+
+  @media (max-width: 500px) {
+    gap: 0;
+  }
 }
 
 img {
@@ -39,6 +63,15 @@ i {
     font-family: $body-font;
     font-weight: $semiBold;
     font-size: 3.5rem;
+
+    @media (max-width: 950px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 2.4rem;
+      text-align: center;
+    }
 
     background-image: linear-gradient(
       90deg,
@@ -68,6 +101,15 @@ i {
     font-size: 4rem;
     font-weight: $regular;
     text-transform: uppercase;
+
+    @media (max-width: 950px) {
+      font-size: 3.5rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 2.5rem;
+      text-align: center;
+    }
   }
 
   .hero__tag {
@@ -76,6 +118,18 @@ i {
     font-weight: $regular;
     text-transform: none;
     margin-top: 3.5rem;
+
+    @media (max-width: 800px) {
+      margin-top: 3rem;
+    }
+    @media (max-width: 600px) {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 500px) {
+      text-align: center;
+    }
   }
 }
 
@@ -89,6 +143,17 @@ i {
     justify-self: center;
     width: 40%;
   }
+  @media (max-width: 850px) {
+    width: 50%;
+  }
+  @media (max-width: 750px) {
+    padding-top: 3rem;
+  }
+
+  @media (max-width: 378px) {
+    align-self: end;
+    width: 75%;
+  }
 }
 
 /***********************/
@@ -101,6 +166,10 @@ h3 {
   font-weight: $regular;
   text-transform: uppercase;
   padding-bottom: 4rem;
+
+  @media (max-width: 500px) {
+    font-size: 2.2rem;
+  }
 }
 
 h4 {
@@ -115,6 +184,10 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
+
+  @media (max-width: 550px) {
+    justify-content: center;
+  }
 }
 
 .list--box {
@@ -135,17 +208,10 @@ h4 {
     font-weight: $light;
 
     line-height: 1.5rem;
-  }
 
-  span {
-    display: block;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    color: $black;
-    font-size: 1.4rem;
-    font-family: $body-font;
-    font-weight: $regular;
-    line-height: 1.8rem;
+    @media (max-width: 550px) {
+      text-align: center;
+    }
   }
 }
 
@@ -159,13 +225,32 @@ h4 {
 
 .project__imageContainer {
   width: 100%;
-  border: 1px solid rgba(33, 33, 33, 0.33);
+
   margin-bottom: 5rem;
+
+  img {
+    border: 1px solid rgba(33, 33, 33, 0.33);
+  }
 
   @media (max-width: 1200px) {
     margin-bottom: 1rem;
     width: 70%;
     justify-self: center;
+    align-self: center;
+  }
+
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+
+  @media (max-width: 450px) {
+    width: 90%;
+  }
+
+  @media (max-width: 400px) {
+    align-self: end;
+    margin-bottom: 4rem;
+    width: 100%;
   }
 }
 
@@ -187,21 +272,49 @@ h5 {
   text-transform: uppercase;
   font-size: 2rem;
   padding-bottom: 1rem;
+
+  @media (max-width: 700px) {
+    font-size: 1.7rem;
+  }
+  @media (max-width: 550px) {
+    text-align: center;
+  }
 }
 .tool--list {
   display: flex;
   text-transform: uppercase;
   gap: 2rem;
 
+  @media (max-width: 700px) {
+    gap: 1rem;
+  }
+
+  @media (max-width: 550px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   li {
     font-family: $body-font;
     border: 1px solid $black;
     padding: 0.4rem;
+
+    @media (max-width: 450px) {
+      font-size: 0.8rem;
+    }
   }
 }
 
 .project__text {
   margin-bottom: 5rem;
+
+  @media (max-width: 1200px) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 550px) {
+    margin-bottom: 2rem;
+  }
   p {
     font-size: 1.2rem;
     font-family: $body-font;
@@ -209,10 +322,25 @@ h5 {
     line-height: 1.5rem;
     padding-top: 1rem;
     line-height: 2rem;
+
+    @media (max-width: 700px) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 550px) {
+      text-align: center;
+      line-height: 1.5rem;
+    }
   }
 
+  .project__link {
+    display: flex;
+
+    @media (max-width: 550px) {
+      justify-content: center;
+    }
+  }
   a {
-    display: inline-block;
     margin-top: 3rem;
     margin-right: 2rem;
     font-family: $body-font;
@@ -221,10 +349,15 @@ h5 {
     color: $black;
     font-size: 1.3rem;
     text-decoration: underline;
-  }
 
-  @media (max-width: 1200px) {
-    margin-bottom: 0;
+    @media (max-width: 700px) {
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 550px) {
+      margin-right: 1rem;
+      font-size: 1rem;
+    }
   }
 }
 
@@ -240,6 +373,14 @@ h5 {
   font-size: 2rem;
   margin-bottom: 4rem;
   color: $black;
+
+  @media (max-width: 550px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.2rem;
+  }
 }
 
 .contact--header {
