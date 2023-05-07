@@ -215,6 +215,20 @@ h4 {
   }
 }
 
+.about__resume {
+  font-family: $body-font;
+  font-weight: $medium;
+  color: $black;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+
+  @media (max-width: 550px) {
+    display: block;
+    text-align: center;
+  }
+}
+
 /***********************/
 /* Project Section */
 /***********************/
