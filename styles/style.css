@@ -290,6 +290,7 @@ body {
 html {
   font: 62.5%;
   scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
 }
 @media (max-width: 1200px) {
   html {
@@ -865,6 +866,9 @@ form .btn:hover {
   grid-template-rows: repeat(3, 1fr);
   gap: 3rem;
   padding: 3rem 0 8rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 1200px) {
   .project__grid {
