@@ -773,6 +773,13 @@ form textarea {
   border-bottom: 2px solid #333333;
   margin-bottom: 2rem;
 }
+form input:focus,
+form textarea:focus {
+  border-bottom: 2px solid #333333;
+  outline: none;
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+}
 form label {
   font-family: "Work Sans", sans-serif;
 }

@@ -111,7 +111,7 @@
       <section class="wrapper grid hero__grid">
         <div class="hero__textContainer">
           <h1>Hello, I'm Rayan</h1>
-          <p>FrontEnd</p>
+          <p>Software</p>
           <p>Developer</p>
           <p class="hero__tag">
             I am a Toronto based programmer with a passion for crafting clean
@@ -171,10 +171,11 @@
               </li>
               <li>
                 <div class="list--box">
-                  <i class="devicon-jquery-plain"></i>
-                  <p>JQuery</p>
+                  <i class="devicon-jest-plain"></i>
+                  <p>Jest</p>
                 </div>
               </li>
+
               <li>
                 <div class="list--box">
                   <i class="devicon-git-plain"></i>
@@ -209,7 +210,6 @@
           </div>
           <div class="about__des">
             <p>
-              <!--Add grod and flex box-->
               I have a multi-disciplinary approach to work. Leveraging my
               previous background in design and project management, I am
               committed to producing robust and elegant code that effectively
@@ -256,7 +256,7 @@
             />
           </div>
           <div class="project__text">
-            <h5>Organic</h5>
+            <h5>Organic e-commerce store</h5>
 
             <ul class="tool--list">
               <li>HTML</li>
@@ -269,11 +269,12 @@
               Organic is a multi-page e-commerce site with a fully functional
               shopping cart connected to a real-time database, advanced product
               search and filter, scroll effects using Intersection Observation
-              API, image carousel gallery and is fully responsive down to 320px.
+              API, image carousel gallery and is fully responsive across all
+              viewports using CSS grids and flexbox.
             </p>
             <div class="project__link">
-              <a href="https://oraganic-123.netlify.app/">Live Site</a>
-              <a href="https://github.com/rayanmishra/rayanMishraProject-1"
+              <a href="https://organic-supermarket.netlify.app/">Live Site</a>
+              <a href="https://github.com/rayanmishra/organicEcommerceStore"
                 >View Code</a
               >
             </div>
@@ -298,7 +299,7 @@
 
             <div class="project__link">
               <a href="https://chat-app-rayan.netlify.app/">Live Site</a>
-              <a href="https://github.com/rayanmishra/rayanMishraProject-3"
+              <a href="https://github.com/rayanmishra/chatApp-React"
                 >View Code</a
               >
             </div>
@@ -338,9 +339,7 @@
             </p>
             <div class="project__link">
               <a href="https://robo-trivia-app.netlify.app/">Live Site</a>
-              <a href="https://github.com/RoboTriviaProject/RoboTrivia"
-                >View Code</a
-              >
+              <a href="https://github.com/rayanmishra/RoboTrivia">View Code</a>
             </div>
           </div>
           <!-- 4th -->
@@ -353,13 +352,15 @@
             </ul>
 
             <p>
-              A fully responsive multi-page PSD conversion webpage made using
-              given mockup design files. This site is fully responsive across
-              all viewports.
+              A fully responsive PSD conversion webpage made using given mockup
+              design files. This site is fully responsive across all viewports
+              using CSS grids and flexbox.
             </p>
             <div class="project__link">
               <a href="https://tasty-practise.netlify.app/">Live Site</a>
-              <a href="https://github.com/rayanmishra/Tasty">View Code</a>
+              <a href="https://github.com/rayanmishra/tasty-staticSite"
+                >View Code</a
+              >
             </div>
           </div>
           <div class="project__imageContainer project__four">
@@ -388,10 +389,14 @@
             <p class="contact--header">Find me on</p>
             <ul class="contact__socials">
               <li>
-                <a href="#"><i class="devicon-github-original"></i></a>
+                <a href="https://github.com/rayanmishra"
+                  ><i class="devicon-github-original"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="devicon-linkedin-plain"></i></a>
+                <a href="https://www.linkedin.com/in/rayanmishra7/"
+                  ><i class="devicon-linkedin-plain"></i
+                ></a>
               </li>
             </ul>
             <a href="#main--section" class="contact__top"
@@ -406,14 +411,20 @@
               action="./index.html#contact"
             >
               <p>
-                <label>Your Name: <input type="text" name="name" /></label>
+                <label
+                  >Your Name: <input type="text" name="name" required
+                /></label>
               </p>
               <p>
-                <label>Your Email: <input type="email" name="email" /></label>
+                <label
+                  >Your Email: <input type="email" name="email" required
+                /></label>
               </p>
 
               <p>
-                <label>Message: <textarea name="message"></textarea></label>
+                <label
+                  >Message: <textarea name="message" required></textarea>
+                </label>
               </p>
               <p>
                 <button class="btn" type="submit">Send</button>
