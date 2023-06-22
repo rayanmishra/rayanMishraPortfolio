@@ -283,6 +283,10 @@ a {
   text-decoration: none;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #f7f6f3;
 }
