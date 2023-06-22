@@ -79,4 +79,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
   }
+
+  @media (max-width: 600px) {
+    padding: 3rem 0 3rem 0;
+  }
 }
