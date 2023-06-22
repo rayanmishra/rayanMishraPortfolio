@@ -60,8 +60,14 @@
     grid-template-rows: repeat(8, 1fr);
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 800px) {
     gap: 0;
+    grid-template-rows: 0.75fr 1fr 0.75fr 1fr 0.75fr 1fr 0.75fr 0.9fr;
+  }
+
+  @media (max-width: 600px) {
+    gap: 0;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 0.9fr;
   }
 }
 
