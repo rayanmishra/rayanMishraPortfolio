@@ -13,7 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <!--  -->
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--FONT  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,7 +32,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <!--  -->
+    <!-- ICONS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
@@ -109,7 +112,11 @@
     <main id="main--section">
       <!-- hero section -->
       <section class="wrapper grid hero__grid">
-        <div class="hero__textContainer">
+        <div
+          class="hero__textContainer"
+          data-aos="fade-right"
+          data-aos-duration="1200"
+        >
           <h1>Hello, I'm Rayan</h1>
           <p>Software</p>
           <p>Developer</p>
@@ -118,19 +125,23 @@
             and accessible web applications.
           </p>
         </div>
-        <div class="hero__imgContainer">
+        <div
+          class="hero__imgContainer"
+          data-aos="fade-up"
+          data-aos-duration="900"
+        >
           <img src="/assets/profile.png" alt="profile picture" />
         </div>
       </section>
 
       <!-- About me -->
       <section class="wrapper" id="about">
-        <div class="title">
+        <div class="title" data-aos="fade-right" data-aos-duration="1200">
           <div class="title--style"></div>
           <h3>About</h3>
         </div>
         <div class="grid about__grid">
-          <div class="about__skill">
+          <div class="about__skill" data-aos="fade-in" data-aos-duration="1200">
             <h4>Toolkit</h4>
             <ul class="skill__list">
               <li>
@@ -208,7 +219,7 @@
               </li>
             </ul>
           </div>
-          <div class="about__des">
+          <div class="about__des" data-aos="fade-left" data-aos-duration="1200">
             <p>
               I have a multi-disciplinary approach to work. Leveraging my
               previous background in design and project management, I am
@@ -242,20 +253,28 @@
       <!-- Project -->
 
       <section class="wrapper" id="project">
-        <div class="title">
+        <div class="title" data-aos="fade-right" data-aos-duration="1200">
           <div class="title--style"></div>
           <h3>Projects</h3>
         </div>
-        <h4 class="project--header">Selected Projects</h4>
+
         <div class="grid project__grid">
           <!-- 1st -->
-          <div class="project__imageContainer">
+          <div
+            class="project__imageContainer"
+            data-aos="fade-up-right"
+            data-aos-duration="800"
+          >
             <img
-              src="./assets/project/organic.png"
+              src="./assets/project/organic2.png"
               alt="screenshot of the organic homepage"
             />
           </div>
-          <div class="project__text">
+          <div
+            class="project__text"
+            data-aos="fade-in"
+            data-aos-duration="1700"
+          >
             <h5>Organic e-commerce store</h5>
 
             <ul class="tool--list">
@@ -280,7 +299,11 @@
             </div>
           </div>
           <!-- 2nd -->
-          <div class="project__text">
+          <div
+            class="project__text"
+            data-aos="fade-in"
+            data-aos-duration="1700"
+          >
             <h5>Chat App</h5>
 
             <ul class="tool--list">
@@ -304,20 +327,32 @@
               >
             </div>
           </div>
-          <div class="project__imageContainer project__two">
+          <div
+            class="project__imageContainer project__two"
+            data-aos="fade-up-left"
+            data-aos-duration="800"
+          >
             <img
-              src="./assets/project/chatapp.png"
+              src="./assets/project/chatapp2.png"
               alt="screenshot of the organic homepage"
             />
           </div>
           <!-- 3rd -->
-          <div class="project__imageContainer">
+          <div
+            class="project__imageContainer"
+            data-aos="fade-up-right"
+            data-aos-duration="800"
+          >
             <img
-              src="./assets/project/trivia.png"
+              src="./assets/project/trivia2.png"
               alt="screenshot of the organic homepage"
             />
           </div>
-          <div class="project__text">
+          <div
+            class="project__text"
+            data-aos="fade-in"
+            data-aos-duration="1200"
+          >
             <h5>Robo Trivia App</h5>
 
             <ul class="tool--list">
@@ -343,7 +378,11 @@
             </div>
           </div>
           <!-- 4th -->
-          <div class="project__text">
+          <div
+            class="project__text"
+            data-aos="fade-in"
+            data-aos-duration="1700"
+          >
             <h5>Tasty</h5>
 
             <ul class="tool--list">
@@ -363,7 +402,11 @@
               >
             </div>
           </div>
-          <div class="project__imageContainer project__four">
+          <div
+            class="project__imageContainer project__four"
+            data-aos="fade-up-left"
+            data-aos-duration="800"
+          >
             <img
               src="./assets/project/tasty.png"
               alt="screenshot of the organic homepage"
@@ -374,12 +417,16 @@
 
       <!-- Contact me -->
       <section class="wrapper" id="contact">
-        <div class="title">
+        <div class="title" data-aos="fade-right" data-aos-duration="1200">
           <div class="title--style"></div>
           <!-- <h3>Get in touch</h3> -->
           <h3>Contact</h3>
         </div>
-        <div class="grid contact__grid">
+        <div
+          class="grid contact__grid"
+          data-aos="fade-in"
+          data-aos-duration="1700"
+        >
           <div class="contact__text">
             <p class="contact--header">Email</p>
             <a href="mailto:rayanmishra7@gmail.com" class="contact--info"

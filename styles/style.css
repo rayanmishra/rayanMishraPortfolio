@@ -540,10 +540,6 @@ h4 {
 /***********************/
 /* Project Section */
 /***********************/
-.project--header {
-  margin-bottom: 3rem;
-}
-
 .project__imageContainer {
   width: 100%;
   margin-bottom: 5rem;
@@ -870,9 +866,8 @@ form .btn:hover {
 
 .project__grid {
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 3rem;
-  padding: 3rem 0 8rem 0;
+  padding: 0 0 4rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

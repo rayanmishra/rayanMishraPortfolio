@@ -13,3 +13,6 @@ list.forEach((link) => {
     hamburger.classList.toggle('active');
   });
 });
+
+// AOS intialization
+AOS.init();
