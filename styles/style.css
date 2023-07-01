@@ -349,6 +349,12 @@ img {
   border-bottom: 3.5px solid #f08f3f;
   margin-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .title--style {
+    width: 7rem;
+    margin-right: 1rem;
+  }
+}
 
 i {
   font-size: 3.5rem;
@@ -933,8 +939,8 @@ form .btn:hover {
 header {
   position: sticky;
   top: 0;
-  -webkit-box-shadow: 0px 10px 61px -22px #b6b6b6;
-          box-shadow: 0px 10px 61px -22px #b6b6b6;
+  -webkit-box-shadow: 0px 10px 61px -22px #dbd8d8;
+          box-shadow: 0px 10px 61px -22px #dbd8d8;
   background-color: rgba(247, 246, 243, 0.9);
   z-index: 10;
 }

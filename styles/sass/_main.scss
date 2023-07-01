@@ -53,6 +53,11 @@ img {
   height: 1.4rem;
   border-bottom: 3.5px solid $yellow;
   margin-bottom: 10px;
+
+  @media (max-width: 500px) {
+    width: 7rem;
+    margin-right: 1rem;
+  }
 }
 
 i {
