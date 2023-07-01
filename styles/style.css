@@ -328,6 +328,10 @@ html {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
 }
 @media (max-width: 500px) {
   .title {
@@ -342,7 +346,8 @@ img {
 .title--style {
   width: 11rem;
   height: 1.4rem;
-  border-bottom: 3.5px solid #eebf99;
+  border-bottom: 3.5px solid #f08f3f;
+  margin-bottom: 10px;
 }
 
 i {
@@ -460,15 +465,13 @@ i {
 /***********************/
 /* About Section */
 /***********************/
-h3 {
+.title--text {
   font-family: "Crimson Text", serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-bottom: 4rem;
+  font-size: 3rem;
+  font-weight: 600;
 }
 @media (max-width: 500px) {
-  h3 {
+  .title--text {
     font-size: 2.2rem;
   }
 }
@@ -517,13 +520,24 @@ h4 {
 .about__des p {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5rem;
 }
 @media (max-width: 550px) {
   .about__des p {
     text-align: center;
   }
+}
+
+.about__const {
+  text-transform: lowercase;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+.about__const em {
+  color: #f08f3f;
 }
 
 .about__resume {
@@ -533,6 +547,7 @@ h4 {
   font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: underline;
+  color: #f08f3f;
 }
 @media (max-width: 550px) {
   .about__resume {
@@ -597,6 +612,7 @@ h5 {
   text-transform: uppercase;
   font-size: 2rem;
   padding-bottom: 1rem;
+  color: #f08f3f;
 }
 @media (max-width: 700px) {
   h5 {
@@ -944,7 +960,7 @@ header {
   gap: 2rem;
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  text-transform: uppercase;
+  letter-spacing: 2px;
   list-style: none;
 }
 .navbar__list a {
@@ -968,6 +984,9 @@ header {
 .navbar__list a:hover:after {
   width: 100%;
   left: 0;
+}
+.navbar__list span {
+  color: #f08f3f;
 }
 
 .nav--burger {

@@ -28,8 +28,8 @@ header {
   gap: 2rem;
   font-size: 1.2rem;
   font-family: $body-font;
+  letter-spacing: 2px;
 
-  text-transform: uppercase;
   list-style: none;
 
   a {
@@ -53,6 +53,10 @@ header {
   a:hover:after {
     width: 100%;
     left: 0;
+  }
+
+  span {
+    color: $yellow;
   }
 }
 
